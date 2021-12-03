@@ -6,100 +6,63 @@
         </title>
     </head>
     <body>
-    <h3>Formulario para admisión en el Rol</h3>
+        <h3>Formulario para admisión en el Rol</h3>
     
-    <meta charset="UTF-8">
-    <form action="https://ptsv2.com/t/smx2m08/post" method="post" style="border:1px solid">
-        <!-- Información Básica -->
-        <fieldset style= "width:50%; background:#FCA786">
-            <legend>Datos personales</legend>
-            <label>Nombre</label> <br/>
-            <input type="text" size="23" name="nombre" value="" placeholder="Tu nombre" />
-            <input type="hidden" name="nombre_secreto" value="nombre secreto" />
-            
-            <br/>
-            <br/>
-            
-            <label>Altura en centímetros</label> <br/>
-            <input type="number" size="23" name="altura" placeholder="Indica tu altura"/>
-            
-            <br/>
-            <br/>
-            
-            <label>E-mail</label> <br/>
-            <input type="text" name="email" placeholder="tuemail@dominio.com" value="" size="23"/>
-            
-            <br/>
-            <br/>
-            
-            <label>Fecha de nacimiento</label> <br/>
-            <input type="date" name="nacimiento" value=""/>
-        </fieldset>
-        <!-- Nacionalidad -->
-        <fieldset style= "width:50%; background:#7DF663">
-            <legend>Nacionalidad</legend>
-            <input type="radio" name="nacionalidad" value="Española" checked="checked" /> Española
-            <input type="radio" name="nacionalidad" value="Comunitario" /> Comunitario (UE)
-            <input type="radio" name="nacionalidad" value="no comunitario" /> No comunitario
-        </fieldset>
-        <!-- Estudios -->
-        <fieldset style= "width:50%; background:#FB99C1">
-            <legend>Estudios</legend>
-            <select name="so">
-                <option value="" selected="selected">- selecciona -</option>
-                <option value="windows">GM</option>
-                <option value="mac">GS</option>
-            </select>
-        </fieldset>
-        <!-- Idiomas -->
-        <fieldset style= "width:50%; background:#83C9E8">
-            <legend>Idiomas</legend>
-            <input type="checkbox" name="catalan" value="Catalán" /> Catalán
-            <input type="checkbox" name="castellano" value="Castellano" /> Castellano
-            <input type="checkbox" name="ingles" value="Inglés" /> Inglés
-            <input type="checkbox" name="chino" value="Chino" /> Chino
-        </fieldset>
-        <br/>
-        <br/>
-        
-        <label for="nombre">Nombre del producto</label> <br/>
-        <input type="text" id="nombre" name="nombre" value="" />
-        
-        <br/>
-        <br/>
+        <meta charset="UTF-8">
+        <form action="https://ptsv2.com/t/smx2m08/post" method="post" style="border:1px solid">
+            <!-- Información Básica -->
+            <fieldset style= "width:50%; background:#FCA786">
+                <legend>Datos personales</legend>
+                <label>Nombre</label> <br/>
+                <input type="text" size="23" name="nombre" value="" placeholder="Tu nombre" />
+                <input type="hidden" name="nombre_secreto" value="nombre secreto" />
 
-        <label for="descripcion">Descripción del producto</label> <br/>
-        <textarea id="descripcion" name="descripcion" style="width:400px; height:50px; background:red;"></textarea>
+                <br/>
+                <br/>
 
-        <br/>
-        <br/>
-        
-        <br/>
-        <br/>
-        
-        <label for="so2">Sistema operativo</label> <br/>
-        <select id="so2" name="so2" size="5">
-          <option value="windows" selected="selected">Windows</option>
-          <option value="mac">Mac</option>
-          <option value="linux">Linux</option>
-          <option value="otro">Otro</option>
-        </select>
-        
-        <br/>
-        <br/>
-        
-        <label for="so3">Sistema operativo</label> <br/>
-        <select id="so3" name="so3" size="5" multiple="multiple">
-          <option value="windows" selected="selected">Windows</option>
-          <option value="mac">Mac</option>
-          <option value="linux">Linux</option>
-          <option value="otro">Otro</option>
-        </select>
-        
-        <br/>
-        <br/>
-        
-        <input type="submit" value="Enviar" />
-    </form>
+                <label>Altura en centímetros</label> <br/>
+                <input type="number" size="23" name="altura" placeholder="Indica tu altura"/>
+
+                <br/>
+                <br/>
+
+                <label>E-mail</label> <br/>
+                <input type="text" name="email" placeholder="tuemail@dominio.com" value="" size="23"/>
+
+                <br/>
+                <br/>
+
+                <label>Fecha de nacimiento</label> <br/>
+                <input type="date" name="nacimiento" value=""/>
+            </fieldset>
+            <!-- Nacionalidad -->
+            <fieldset style= "width:50%; background:#7DF663">
+                <legend>Nacionalidad</legend>
+                <input type="radio" name="nacionalidad" value="Española" checked="checked" /> Española
+                <input type="radio" name="nacionalidad" value="Comunitario" /> Comunitario (UE)
+                <input type="radio" name="nacionalidad" value="no comunitario" /> No comunitario
+            </fieldset>
+            <!-- Estudios -->
+            <fieldset style= "width:50%; background:#FB99C1">
+                <legend>Estudios</legend>
+                <select name="so">
+                    <option value="" selected="selected">- selecciona -</option>
+                    <option value="windows">GM</option>
+                    <option value="mac">GS</option>
+                </select>
+            </fieldset>
+            <!-- Idiomas -->
+            <fieldset style= "width:50%; background:#83C9E8">
+                <legend>Idiomas</legend>
+                <input type="checkbox" name="catalan" value="Catalán" /> Catalán
+                <input type="checkbox" name="castellano" value="Castellano" /> Castellano
+                <input type="checkbox" name="ingles" value="Inglés" /> Inglés
+                <input type="checkbox" name="chino" value="Chino" /> Chino
+            </fieldset>     
+            <fieldset style= "width:50%; background:#83C9E8">
+                <input type="submit" value="Enviar" />
+                <input type="reset" name="cancelar" value="Cancelar" />
+            </fieldset>
+        </form>
     </body>
 </html>
