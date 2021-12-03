@@ -35,9 +35,14 @@
             <label>Fecha de nacimiento</label> <br/>
             <input type="date" name="nacimiento" value=""/>
         </fieldset>
-
-        <br/>
-        <br/>
+    <form action="https://ptsv2.com/t/smx2m08/post" method="post">
+        <!-- Nacionalidad -->
+        <fieldset style= "width:50%; background:#7DF663">
+            <legend>Nacionalidad</legend>
+            <input type="radio" name="nacionalidad" value="Española" checked="checked" /> Española
+            <input type="radio" name="nacionalidad" value="Comunitario" /> Comunitario (UE)
+            <input type="radio" name="nacionalidad" value="no comunitario" /> No comunitario
+        </fieldset>
         <!-- Contraseña -->
         Escribe la contraseña:
         <input type="password" size="23" name="contra" value="" />
