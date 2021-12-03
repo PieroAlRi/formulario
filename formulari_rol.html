@@ -4,17 +4,44 @@
         <title>
         Formulario rol
         </title>
+        <style>
+            fieldset {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .f1 {
+                margin-top: 20px;
+            }
+            .f2 {
+                margin-bottom: 20px;
+                margin-top: 5px;
+            }
+            legend {
+                font-size: 20px;
+            }
+            h1 {
+                color: green;
+                text-align: center;
+            }
+            form {
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            body {
+                align-content: center;
+            }
+        </style>
     </head>
     <body>
-        <h3>Formulario para admisión en el Rol</h3>
+        <h1>Formulario para admisión en el Rol</h1>
     
         <meta charset="UTF-8">
         <form action="https://ptsv2.com/t/smx2m08/post" method="post" style="border:1px solid">
             <!-- Información Básica -->
-            <fieldset style= "width:50%; background:#FCA786">
-                <legend>Datos personales</legend>
+            <fieldset class="f1" style= "background:#FCA786">
+                <legend><b><u>Datos personales</u></b></legend>
                 <label>Nombre</label> <br/>
-                <input type="text" size="23" name="nombre" value="" placeholder="Tu nombre" />
+                <input type="text" size="50" name="nombre" value="" placeholder="Tu nombre" />
                 <input type="hidden" name="nombre_secreto" value="nombre secreto" />
 
                 <br/>
@@ -36,15 +63,15 @@
                 <input type="date" name="nacimiento" value=""/>
             </fieldset>
             <!-- Nacionalidad -->
-            <fieldset style= "width:50%; background:#7DF663">
-                <legend>Nacionalidad</legend>
+            <fieldset style= "background:#7DF663">
+                <legend><b><u>Nacionalidad</u></b></legend>
                 <input type="radio" name="nacionalidad" value="Española" checked="checked" /> Española
                 <input type="radio" name="nacionalidad" value="Comunitario" /> Comunitario (UE)
                 <input type="radio" name="nacionalidad" value="no comunitario" /> No comunitario
             </fieldset>
             <!-- Estudios -->
-            <fieldset style= "width:50%; background:#FB99C1">
-                <legend>Estudios</legend>
+            <fieldset style= "background:#FB99C1">
+                <legend><b><u>Estudios</u></b></legend>
                 <select name="so">
                     <option value="" selected="selected">- selecciona -</option>
                     <option value="windows">GM</option>
@@ -52,14 +79,14 @@
                 </select>
             </fieldset>
             <!-- Idiomas -->
-            <fieldset style= "width:50%; background:#83C9E8">
-                <legend>Idiomas</legend>
+            <fieldset style= "background:#83C9E8">
+                <legend><b><u>Idiomas</u></b></legend>
                 <input type="checkbox" name="catalan" value="Catalán" /> Catalán
                 <input type="checkbox" name="castellano" value="Castellano" /> Castellano
                 <input type="checkbox" name="ingles" value="Inglés" /> Inglés
                 <input type="checkbox" name="chino" value="Chino" /> Chino
             </fieldset>     
-            <fieldset style= "width:50%; background:#83C9E8">
+            <fieldset class="f2" style= "background:#939393">
                 <input type="submit" value="Enviar" />
                 <input type="reset" name="cancelar" value="Cancelar" />
             </fieldset>
